@@ -1,0 +1,33 @@
+--- ./Makefile.org	Fri Jun 21 01:56:52 2002
++++ ./Makefile	Tue Jul  2 21:20:42 2002
+@@ -1,18 +1,23 @@
+ # get base-dir (logarch-x)
+ base=`pwd | sed 's/^.*\///'`
+ 
++PREFIX=/usr
++SBINDIR=$(PREFIX)/sbin
++CONFIGDIR=/etc
++LOGDIR=/var/log
++
+ all:
+ 	@echo "Nothing to do... just type make install"
+-	@echo "to install logarch to /usr/sbin and copy"
+-	@echo "a sample config-file to /etc/logarch.conf"
++	@echo "to install logarch to $(PREFIX)$(SBINDIR) and copy"
++	@echo "a sample config-file to $(CONFIGDIR)/logarch.conf"
+ 
+ # install script
+ install:
+-	install logarch /usr/sbin
+-	install examples/logarch.conf /etc
+-	@mkdir -p /etc/logarch.d
+-	@mkdir -p /var/log/old
+-
++	@mkdir -p $(DESTDIR)$(SBINDIR)
++	@mkdir -p $(DESTDIR)$(LOGDIR)/archiv
++	@mkdir -p $(DESTDIR)$(CONFIGDIR)/logarch.d
++	install logarch $(DESTDIR)$(SBINDIR)
++	install examples/logarch.conf $(DESTDIR)$(CONFIGDIR)
+ 
+ # remove installed script
+ uninstall:
