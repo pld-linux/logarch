@@ -11,6 +11,7 @@ Release:	1
 License:	GPL
 Group:		Applications/System
 Source0:	http://www.lohmueller.ch/projects/logarch/%{name}-%{version}.tar.bz2
+# Source0-md5:	a81f5cd0517281b28279d45c622e6e0f
 Patch0:		%{name}-DESTDIR.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
