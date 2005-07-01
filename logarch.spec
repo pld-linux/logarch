@@ -14,6 +14,7 @@ Group:		Applications/System
 Source0:	%{name}-%{version}.tar.bz2
 # Source0-md5:	9e5fb7dff09fff3454a9f79014b38668
 Patch0:		%{name}-DESTDIR.patch
+BuildRequires:	rpm-perlprov
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -76,6 +77,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc CHANGES README examples/logarch.d/*
 %attr(755,root,root) %{_sbindir}/logarch
 %attr(750,root,root) %dir %{_sysconfdir}/logarch.d
-#%attr(750,root,root) %config(noreplace) %verify(not md5 size mtime) /etc/cron.daily/logarch
-%attr(640,root,root) %config(noreplace) %verify(not md5 size mtime) %{_sysconfdir}/*.conf
+#%attr(750,root,root) %config(noreplace) %verify(not md5 mtime size) /etc/cron.daily/logarch
+%attr(640,root,root) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/*.conf
 %attr(750,root,root) %dir /var/log/archiv
