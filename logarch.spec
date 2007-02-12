@@ -1,10 +1,10 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Rotates, compresses, removes and mails system log files
-Summary(de):	Rotiert, komprimiert und verschickt Systemlogs
-Summary(es):	Hace el rutado, comprime y envía mail de logs del sistema
-Summary(fr):	Fait tourner, compresse, et envoie par mail les connexions au système
-Summary(pl):	System rotacji i kompresowania logów
-Summary(tr):	Sistem günlüklerini yönlendirir, sıkıştırır ve mektup olarak yollar
+Summary(de.UTF-8):   Rotiert, komprimiert und verschickt Systemlogs
+Summary(es.UTF-8):   Hace el rutado, comprime y envÃ­a mail de logs del sistema
+Summary(fr.UTF-8):   Fait tourner, compresse, et envoie par mail les connexions au systÃ¨me
+Summary(pl.UTF-8):   System rotacji i kompresowania logÃ³w
+Summary(tr.UTF-8):   Sistem gÃ¼nlÃ¼klerini yÃ¶nlendirir, sÄ±kÄ±ÅŸtÄ±rÄ±r ve mektup olarak yollar
 Name:		logarch
 Version:	0.6
 Release:	1
@@ -25,40 +25,40 @@ files. Logarch can be set to handle a log file daily, weekly, monthly
 or when the log file gets to a certain size. Normally, logarch runs as
 a daily cron job.
 
-%description -l de
+%description -l de.UTF-8
 Logarch vereinfacht die Verwaltung von Systemen, die sehr viele
 Log-Dateien erzeugen, indem es das automatische Rotieren,
-Komprimieren, Entfernen, und Senden von Log-Dateien ermöglicht. Jede
-Log-Datei kann täglich, wöchentlich oder monatlich verarbeitet werden,
-wenn sie zu groß wird.
+Komprimieren, Entfernen, und Senden von Log-Dateien ermÃ¶glicht. Jede
+Log-Datei kann tÃ¤glich, wÃ¶chentlich oder monatlich verarbeitet werden,
+wenn sie zu groÃŸ wird.
 
-%description -l es
-Logarch fue proyectado para facilitar la administración de sistemas
-que generan gran número de archivos de log. Permite automatización en
-la rotación, compresión, remoción y envío de mail de archivos de logs.
+%description -l es.UTF-8
+Logarch fue proyectado para facilitar la administraciÃ³n de sistemas
+que generan gran nÃºmero de archivos de log. Permite automatizaciÃ³n en
+la rotaciÃ³n, compresiÃ³n, remociÃ³n y envÃ­o de mail de archivos de logs.
 Cada archivo de log puede ser tratado diariamente, semanalmente,
 mensualmente o cuanto crezca demasiado.
 
-%description -l fr
-Logarch est conçu pour faciliter l'administration de systèmes qui
-générent un grand nombre de fichiers de \"log\". Il permet le
-roulement, la suppréssion la compression et l'envoi automatiques de
-ces fichiers. Chaque fichier de \"log\" peut être pris en charge de
-manière quotidienne, hebdomadaire, mensuelle, ou quand il devient trop
+%description -l fr.UTF-8
+Logarch est conÃ§u pour faciliter l'administration de systÃ¨mes qui
+gÃ©nÃ©rent un grand nombre de fichiers de \"log\". Il permet le
+roulement, la supprÃ©ssion la compression et l'envoi automatiques de
+ces fichiers. Chaque fichier de \"log\" peut Ãªtre pris en charge de
+maniÃ¨re quotidienne, hebdomadaire, mensuelle, ou quand il devient trop
 volumineux.
 
-%description -l pl
-Logarch jest przeznaczony do ³atwej administracji plikami logów.
-Program ten pozwala na automatyczn± kompresjê logów. Mo¿e kontrolowaæ
-logi raz dziennie, raz na miesi±c, raz na tydzieñ lub wtedy kiedy
-pliki z logami systemowymi s± ju¿ du¿e.
+%description -l pl.UTF-8
+Logarch jest przeznaczony do Å‚atwej administracji plikami logÃ³w.
+Program ten pozwala na automatycznÄ… kompresjÄ™ logÃ³w. MoÅ¼e kontrolowaÄ‡
+logi raz dziennie, raz na miesiÄ…c, raz na tydzieÅ„ lub wtedy kiedy
+pliki z logami systemowymi sÄ… juÅ¼ duÅ¼e.
 
-%description -l tr
-Logarch çok fazla sayıda günlük dosyası üreten sistemlerin yönetimini
-kolaylaştırmak için tasarlanmıştır. Kayıt dosyalarının otomatik olarak
-yönlendirilmesini, sıkıştırılmasını, silinmesinı ve mektup olarak
-yollanmasını sağlar. Her dosya günlük, haftalık, aylık olarak ya da
-çok büyük boyutlara ulaştığında işlenebilir.
+%description -l tr.UTF-8
+Logarch Ã§ok fazla sayÄ±da gÃ¼nlÃ¼k dosyasÄ± Ã¼reten sistemlerin yÃ¶netimini
+kolaylaÅŸtÄ±rmak iÃ§in tasarlanmÄ±ÅŸtÄ±r. KayÄ±t dosyalarÄ±nÄ±n otomatik olarak
+yÃ¶nlendirilmesini, sÄ±kÄ±ÅŸtÄ±rÄ±lmasÄ±nÄ±, silinmesinÄ± ve mektup olarak
+yollanmasÄ±nÄ± saÄŸlar. Her dosya gÃ¼nlÃ¼k, haftalÄ±k, aylÄ±k olarak ya da
+Ã§ok bÃ¼yÃ¼k boyutlara ulaÅŸtÄ±ÄŸÄ±nda iÅŸlenebilir.
 
 %prep
 %setup -q
