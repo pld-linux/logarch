@@ -1,10 +1,10 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Rotates, compresses, removes and mails system log files
-Summary(de.UTF-8):   Rotiert, komprimiert und verschickt Systemlogs
-Summary(es.UTF-8):   Hace el rutado, comprime y envía mail de logs del sistema
-Summary(fr.UTF-8):   Fait tourner, compresse, et envoie par mail les connexions au système
-Summary(pl.UTF-8):   System rotacji i kompresowania logów
-Summary(tr.UTF-8):   Sistem günlüklerini yönlendirir, sıkıştırır ve mektup olarak yollar
+Summary(de.UTF-8):	Rotiert, komprimiert und verschickt Systemlogs
+Summary(es.UTF-8):	Hace el rutado, comprime y envía mail de logs del sistema
+Summary(fr.UTF-8):	Fait tourner, compresse, et envoie par mail les connexions au système
+Summary(pl.UTF-8):	System rotacji i kompresowania logów
+Summary(tr.UTF-8):	Sistem günlüklerini yönlendirir, sıkıştırır ve mektup olarak yollar
 Name:		logarch
 Version:	0.6
 Release:	1
