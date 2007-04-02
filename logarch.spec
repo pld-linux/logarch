@@ -79,4 +79,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(750,root,root) %dir %{_sysconfdir}/logarch.d
 #%attr(750,root,root) %config(noreplace) %verify(not md5 mtime size) /etc/cron.daily/logarch
 %attr(640,root,root) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/*.conf
-%attr(750,root,root) %dir /var/log/archiv
+%attr(750,root,root) %dir /var/log/archive
