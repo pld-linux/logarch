@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.perl
 Summary:	Rotates, compresses, removes and mails system log files
 Summary(de.UTF-8):	Rotiert, komprimiert und verschickt Systemlogs
 Summary(es.UTF-8):	Hace el rutado, comprime y envía mail de logs del sistema
