@@ -61,7 +61,7 @@ yollanmasını sağlar. Her dosya günlük, haftalık, aylık olarak ya da
 
 %prep
 %setup -q
-%patch0 -p0
+%patch -P0 -p0
 
 %install
 rm -rf $RPM_BUILD_ROOT
